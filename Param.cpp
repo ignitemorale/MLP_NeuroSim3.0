@@ -42,15 +42,15 @@
 
 Param::Param() {
 	/* MNIST dataset */
-	numMnistTrainImages = 60000;// # of training images in MNIST
+	numMnistTrainImages = 50000;// # of training images in MNIST
 	numMnistTestImages = 10000;	// # of testing images in MNIST
 	
 	/* Algorithm parameters */
-	numTrainImagesPerEpoch = 8000;	// # of training images per epoch 
+	numTrainImagesPerEpoch = 25000;	// # of training images per epoch 
     numTrainImagesPerBatch = 1;   // # of training images per batch. It is 1 for SGD
-	totalNumEpochs = 125;	// Total number of epochs
+	totalNumEpochs = 400;	// Total number of epochs
 	interNumEpochs = 1;		// Internal number of epochs (print out the results every interNumEpochs)
-	nInput = 400;     // # of neurons in input layer
+	nInput = 512;     // # of neurons in input layer
 	nHide = 100;      // # of neurons in hidden layer
 	nOutput = 10;     // # of neurons in output layer
 	alpha1 = 0.4;	// Learning rate for the weights from input to hidden layer
